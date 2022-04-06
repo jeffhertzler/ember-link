@@ -14,7 +14,7 @@ specifiers:
   '@glimmer/component': 1.0.4
   '@glimmer/env': 0.1.7
   '@glimmer/tracking': ^1.0.3
-  '@types/ember': 3.16.6
+  '@types/ember': 4.0.0
   '@types/ember-qunit': 5.0.0
   '@types/ember-test-helpers': 1.0.11
   '@types/ember-testing-helpers': 0.0.4
@@ -72,7 +72,7 @@ devDependencies:
   '@ember/test-helpers': 2.6.0
   '@glimmer/component': 1.0.4
   '@glimmer/env': 0.1.7
-  '@types/ember': 3.16.6
+  '@types/ember': 4.0.0
   '@types/ember-qunit': 5.0.0
   '@types/ember-test-helpers': 1.0.11
   '@types/ember-testing-helpers': 0.0.4
@@ -3131,6 +3131,29 @@ packages:
 
   /@types/ember/3.16.6:
     resolution: {integrity: sha512-S8sw98UUK/sqZS73+D5ESuqV4h6AxSy7Ffe6WFH0Np31BQrMflJv+52Wfj43SS0AfQW4DUuhMaMz6F12ge6VBA==}
+    dependencies:
+      '@types/ember__application': 3.16.3
+      '@types/ember__array': 3.16.4
+      '@types/ember__component': 3.16.6
+      '@types/ember__controller': 3.16.6
+      '@types/ember__debug': 3.16.5
+      '@types/ember__engine': 3.16.3
+      '@types/ember__error': 3.16.1
+      '@types/ember__object': 3.12.6
+      '@types/ember__polyfills': 3.12.1
+      '@types/ember__routing': 3.16.15
+      '@types/ember__runloop': 3.16.3
+      '@types/ember__service': 3.16.1
+      '@types/ember__string': 2.0.0
+      '@types/ember__template': 3.16.1
+      '@types/ember__test': 3.16.1
+      '@types/ember__utils': 3.16.2
+      '@types/htmlbars-inline-precompile': 1.0.1
+      '@types/rsvp': 4.0.4
+    dev: true
+
+  /@types/ember/4.0.0:
+    resolution: {integrity: sha512-IR4o8OkFgoiRKVLRI8URvyNhEBSkjO5DXp2900/TptxOl0Retu8/tKtFaRTwkqteg2a0/6zXAA1rpFb3BbxNpA==}
     dependencies:
       '@types/ember__application': 3.16.3
       '@types/ember__array': 3.16.4
