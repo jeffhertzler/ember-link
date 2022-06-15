@@ -98,6 +98,7 @@ export default class Link {
   private get _routeArgs(): RouteArgs {
     const { routeName, models, queryParams } = this;
     if (queryParams) {
+      // @ts-expect-error
       return [
         routeName,
         ...models,
@@ -176,6 +177,7 @@ export default class Link {
     deprecate('`href` is deprecated. Use `url` instead.', false, {
       id: 'ember-link.link.href',
       until: '2.0.0',
+      // @ts-expect-error
       for: 'ember-link',
       since: {
         available: '1.1.0',
@@ -292,7 +294,7 @@ export interface UILinkParams {
 
 export class UILink extends Link {
   @tracked
-  // eslint-disable-next-line @typescript-eslint/naming-convention
+  // @ts-expect-error eslint-disable-next-line @typescript-eslint/naming-convention
   protected _params!: LinkParams & UILinkParams;
 
   private preventDefault(event?: Event | unknown) {
