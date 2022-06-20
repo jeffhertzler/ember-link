@@ -81,6 +81,7 @@ export default class Link {
   private get _routeArgs(): RouteArgs {
     const { routeName, models, queryParams } = this;
     if (queryParams) {
+      // @ts-ignore
       return [
         routeName,
         ...models,
@@ -266,7 +267,7 @@ export interface UILinkParams {
 
 export class UILink extends Link {
   @tracked
-  // eslint-disable-next-line @typescript-eslint/naming-convention
+  // @ts-ignore eslint-disable-next-line @typescript-eslint/naming-convention
   protected _params!: LinkParams & UILinkParams;
 
   private preventDefault(event?: Event | unknown) {
